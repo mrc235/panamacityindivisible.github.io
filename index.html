@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panama City Indivisible</title>
+    <link rel="canonical" href="https://www.panamacityindivisible.org" />
+    
+    <!-- Facebook/Link Tracking Cleaner -->
+    <script>
+        // Force HTTPS and clean tracking parameters
+        if (window.location.href.match(/^(http:|https:)?\/\/(www\.)?panamacityindivisible\.org(\/.*)?$/)) {
+            var cleanURL = 'https://www.panamacityindivisible.org' + window.location.pathname;
+            if (window.location.href !== cleanURL) {
+                window.history.replaceState({}, document.title, cleanURL);
+            }
+        }
+    </script>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -83,13 +96,6 @@
             }
         }
     </style>
-    <script>
-  // Remove Facebook tracking parameters
-  if (window.location.href.includes('fbclid=')) {
-    window.history.replaceState({}, document.title, window.location.pathname);
-  }
-</script>
-    <link rel="canonical" href="https://www.panamacityindivisible.org" />
 </head>
 <body>
     <header>
@@ -107,5 +113,10 @@
             class="logo"
         >
     </div>
+
+    <!-- Fallback for non-JS users -->
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=https://www.panamacityindivisible.org">
+    </noscript>
 </body>
 </html>
