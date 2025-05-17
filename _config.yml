@@ -1,0 +1,4 @@
+title: Panama City Indivisible
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-redirect-from
