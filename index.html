@@ -83,6 +83,12 @@
             }
         }
     </style>
+    <script>
+  // Remove Facebook tracking parameters
+  if (window.location.href.includes('fbclid=')) {
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+</script>
 </head>
 <body>
     <header>
